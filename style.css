@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  transition: .2s linear;
+}
+
+body {
+  background: #ecd2d2;
+}
+
+.cards-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border: .5px solid #000;
+  padding: 5px;
+  background: #fff;
+  color: #000;
+  box-shadow: 5px 1px 10px 0 #111;
+}
+
+.card .name {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.card .address, .card .company {
+  margin: 15px 0;
+}
+
+.card .address p, .card .company p  {
+  margin-left: 15px;
 }
